@@ -8,6 +8,10 @@
 
   ```git config --global credential.helper cache```  [Caching your GitHub password in Git](https://help.github.com/articles/caching-your-github-password-in-git/#platform-linux)
 
-* Securly store credentials [Using credential store](http://stackoverflow.com/a/32470658)
+* Securly store credentials [Using credential store](https://askubuntu.com/a/776335)
 
-  ```git config --global credential.helper libsecret```
+  ```text
+  sudo apt-get install libgnome-keyring-dev
+  sudo make --directory=/usr/share/doc/git/contrib/credential/gnome-keyring
+  git config --global credential.helper /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+  ```
