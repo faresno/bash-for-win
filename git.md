@@ -1,5 +1,7 @@
 # Helpful git commands
 
+## create repo from command line
+
 ```curl -u '[your github username]' https://api.github.com/user/repos -d '{"name":"[repo-name-to-create]"}'```
 
 ## credential caching
